@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garden of Eden ZA | Premium CBD Wellness</title>
+  <meta name="description" content="South Africa's trusted source for lab-tested, THC-free CBD oils, gummies & topicals. Legal, local, delivered." />
+
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="Garden of Eden ZA – Legal CBD Delivered" />
+  <meta property="og:description" content="THC-free CBD for wellness. Fast, discreet delivery in South Africa." />
+  <meta property="og:image" content="https://yourbrand.vercel.app/og-image.jpg" />
+  <meta property="og:url" content="https://yourbrand.vercel.app" />
+
+  <!-- Favicon (AI-generated placeholder) -->
+  <link rel="icon" href="https://api.dicebear.com/7.x/shapes/svg?seed=GardenOfEdenZA" />
+
+  <!-- Snipcart CSS & JS (Free for dev, live when you add key) -->
+  <link rel="preconnect" href="https://app.snipcart.com">
+  <link rel="preconnect" href="https://cdn.snipcart.com">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+
+  <!-- Custom Styles -->
+  <style>
+    :root {
+      --green: #2d6a4f;
+      --light-green: #95d5b2;
+      --cream: #f1faee;
+      --dark: #1d3557;
+      --gold: #e9c46a;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* Age Gate Modal */
+    #age-gate {
+      position: fixed; top:0; left:0; width:100%; height:100%; 
+      background: rgba(29,53,87,0.98); color:#fff; 
+      display:flex; flex-direction:column; justify-content:center; 
+      align-items:center; text-align:center; z-index:9999;
+      padding: 2rem; font-size:1.1rem;
+    }
+    #age-gate h1 { font-size:2.5rem; margin-bottom:1rem; color:var(--light-green); }
+    #age-gate button {
+      margin-top:2rem; padding:1rem 2rem; font-size:1.1rem;
+      background:var(--green); color:#fff; border:none; border-radius:8px;
+      cursor:pointer; transition:0.3s;
+    }
+    #age-gate button:hover { background:var(--gold); color:var(--dark); }
+
+    /* Header */
+    header {
+      background: var(--green); color:#fff; padding:1rem 0; position:sticky; top:0; z-index:100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    nav {
+      max-width:1200px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:0 1rem;
+    }
+    .logo { font-size:1.8rem; font-weight:900; letter-spacing:1px; }
+    .logo span { color:var(--gold); }
+    .cart-btn {
+      background:none; border:none; color:#fff; font-size:1.5rem; cursor:pointer;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://source.unsplash.com/random/1600x900/?cannabis,leaf,green') center/cover;
+      color:#fff; text-align:center; padding:6rem 1rem;
+    }
+    .hero h1 { font-size:3rem; margin-bottom:1rem; }
+    .hero p { font-size:1.3rem; max-width:700px; margin:0 auto 2rem; }
+    .cta {
+      background:var(--gold); color:var(--dark); padding:1rem 2rem; border:none; border-radius:8px;
+      font-weight:700; font-size:1.1rem; cursor:pointer; transition:0.3s;
+    }
+    .cta:hover { background:var(--light-green); }
+
+    /* Products */
+    .products {
+      max-width:1200px; margin:4rem auto; padding:0 1rem;
+    }
+    .products h2 { text-align:center; margin-bottom:2.5rem; font-size:2.2rem; color:var(--green); }
+    .grid {
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:2rem;
+    }
+    .card {
+      background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.08);
+      transition:0.3s; text-align:center;
+    }
+    .card:hover { transform:translateY(-8px); box-shadow:0 8px 25px rgba(0,0,0,0.15); }
+    .card img {
+      width:100%; height:220px; object-fit:cover;
+    }
+    .card-body { padding:1.5rem; }
+    .card h3 { margin:0.5rem 0; color:var(--green); }
+    .price { font-weight:700; color:var(--gold); font-size:1.3rem; }
+    .btn-add {
+      margin-top:1rem; background:var(--green); color:#fff; border:none; padding:0.7rem 1.2rem;
+      border-radius:6px; cursor:pointer; width:100%; font-weight:600;
+    }
+
+    /* Footer */
+    footer {
+      background:var(--dark); color:#ddd; text-align:center; padding:3rem 1rem; margin-top:4rem;
+    }
+    footer a { color:var(--light-green); text-decoration:none; }
+    .compliance {
+      font-size:0.85rem; margin-top:1.5rem; color:#aaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 { font-size:2.2rem; }
+      nav { flex-direction:column; gap:1rem; }
+    }
+  </style>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- AGE VERIFICATION MODAL -->
+  <div id="age-gate">
+    <h1>🔒 Age Verification</h1>
+    <p>You must be <strong>21 years or older</strong> to enter this site.<br>
+       This website contains cannabis-related content compliant with South African law.</p>
+    <button onclick="verifyAge()">I am 21+</button>
+    <p style="margin-top:2rem; font-size:0.9rem;">
+      <a href="https://www.gov.za" style="color:#95d5b2; text-decoration:underline;">Learn about SA cannabis laws</a>
+    </p>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="logo">Garden of <span>Eden</span> ZA</div>
+      <button class="cart-btn snipcart-checkout">🛒 <span class="snipcart-items-count"></span></button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Premium CBD Wellness</h1>
+    <p>Lab-tested, THC-free CBD oils, gummies & topicals. Grown with care in South Africa. Fast, discreet delivery nationwide.</p>
+    <button class="cta snipcart-add-item" 
+            data-item-id="cbd-oil-1000"
+            data-item-price="649.00"
+            data-item-url="/"
+            data-item-name="1000mg CBD Oil – Full Spectrum">
+      Shop Now
+    </button>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <section class="products">
+    <h2>Our Best Sellers</h2>
+    <div class="grid">
+
+      <!-- Product 1 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/random/400x300/?cbd,oil,bottle" alt="1000mg CBD Oil">
+        <div class="card-body">
+          <h3>1000mg CBD Oil</h3>
+          <p class="price">R649.00</p>
+          <p>Full-spectrum, peppermint flavor. 30ml.</p>
+          <button class="btn-add snipcart-add-item"
+                  data-item-id="cbd-oil-1000"
+                  data-item-price="649.00"
+                  data-item-url="/"
+                  data-item-name="1000mg CBD Oil – Full Spectrum"
+                  data-item-description="Lab-tested, THC <0.3%. Supports calm & recovery.">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/random/400x300/?cbd,gummies" alt="CBD Gummies">
+        <div class="card-body">
+          <h3>CBD Gummies (30ct)</h3>
+          <p class="price">R399.00</p>
+          <p>Mixed berry, 25mg per gummy. Vegan.</p>
+          <button class="btn-add snipcart-add-item"
+                  data-item-id="gummies-750"
+                  data-item-price="399.00"
+                  data-item-url="/"
+                  data-item-name="CBD Gummies – 750mg Total"
+                  data-item-description="Delicious daily wellness. THC-free.">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/random/400x300/?cbd,cream,topical" alt="CBD Balm">
+        <div class="card-body">
+          <h3>Relief Balm 500mg</h3>
+          <p class="price">R479.00</p>
+          <p>Cooling menthol + arnica. 60ml.</p>
+          <button class="btn-add snipcart-add-item"
+                  data-item-id="balm-500"
+                  data-item-price="479.00"
+                  data-item-url="/"
+                  data-item-name="CBD Relief Balm – 500mg"
+                  data-item-description="Fast-acting topical for muscle relief.">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Add more products as needed -->
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 <strong>Garden of Eden ZA</strong>. All rights reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Terms of Service</a> | 
+      <a href="#">Shipping Info</a>
+    </p>
+    <p class="compliance">
+      ⚠️ For adults 21+ only. CBD products are not medicine. Consult a doctor before use.<br>
+      SAHPRA-registered. THC <0.3%. No medical claims made.
+    </p>
+  </footer>
+
+  <!-- Snipcart JS (Add your public API key to go live) -->
+  <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_TEST_KEY_HERE" data-config-modal-style="side"></div>
+
+  <!-- Age Verification Script -->
+  <script>
+    function verifyAge() {
+      const birthDate = prompt("Please enter your birth year (e.g., 1995):");
+      if (birthDate && parseInt(birthDate) <= 2004) {
+        document.getElementById('age-gate').style.display = 'none';
+        localStorage.setItem('ageVerified', 'true');
+      } else {
+        alert("🔞 You must be 18 or older to enter.");
+        window.location.href = "https://www.google.com";
+      }
+    }
+
+    // Check if already verified
+    window.onload = () => {
+      if (localStorage.getItem('ageVerified') === 'true') {
+        document.getElementById('age-gate').style.display = 'none';
+      }
+    };
+  </script>
+
+  <!-- Inter Font (Fallback) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</body>
+</html>
