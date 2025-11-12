@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 1. Core Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2d6a4f" />
+  <title>Garden of Eden ZA | Premium THC-Free CBD</title>
+  <meta name="description" content="Lab-tested, SAHPRA-registered CBD oils, gummies & balms. Fast, discreet delivery in South Africa." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Garden of Eden ZA – Legal CBD Delivered" />
+  <meta property="og:description" content="THC-free wellness. Grown in SA. Delivered fast." />
+  <meta property="og:image" content="https://yourbrand.vercel.app/og-image.jpg" />
+  <meta property="og:url" content="https://yourbrand.vercel.app" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://api.dicebear.com/7.x/shapes/svg?seed=GardenOfEdenZA" />
+
+  <!-- Preload Critical Resources -->
+  <link rel="preconnect" href="https://cdn.snipcart.com" />
+  <link rel="preconnect" href="https://app.snipcart.com" />
+
+  <!-- Google Fonts (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Snipcart CSS -->
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Garden of Eden ZA",
+    "url": "https://yourbrand.vercel.app",
+    "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=GardenOfEdenZA",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "support@gardenofedenza.co.za",
+      "contactType": "Customer Support"
+    }
+  }
+  </script>
+
+  <!-- Custom Styles -->
+  <style>
+    :root {
+      --green: #2d6a4f;
+      --light-green: #95d5b2;
+      --cream: #f1faee;
+      --dark: #1d3557;
+      --gold: #e9c46a;
+      --radius: 12px;
+      --transition: all 0.3s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Skip Link (Accessibility) */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 6px;
+      background: var(--dark);
+      color: #fff;
+      padding: 8px;
+      z-index: 10000;
+      transition: top 0.3s;
+    }
+    .skip-link:focus { top: 6px; }
+
+    /* Age Gate */
+    #age-gate {
+      position: fixed;
+      inset: 0;
+      background: rgba(29,53,87,0.98);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 9999;
+      padding: 2rem;
+      font-size: 1.1rem;
+    }
+    #age-gate h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--light-green); }
+    #age-gate form { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; width: 100%; max-width: 320px; }
+    #age-gate input { padding: 0.8rem; font-size: 1rem; border-radius: 8px; border: none; }
+    #age-gate button {
+      padding: 1rem 2rem;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    #age-gate button:hover { background: var(--gold); color: var(--dark); }
+
+    /* Header */
+    header {
+      background: var(--green);
+      color: #fff;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    .logo { font-size: 1.8rem; font-weight: 900; letter-spacing: 1px; }
+    .logo span { color: var(--gold); }
+    .cart-btn {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1606836576996-3c2e2c2d6d4e?q=80&w=1600') center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 1rem;
+      flex: 1 0 auto;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.3rem; max-width: 700px; margin: 0 auto 2rem; }
+    .cta {
+      background: var(--gold);
+      color: var(--dark);
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .cta:hover { background: var(--light-green); }
+
+    /* Products */
+    .products {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+    .products h2 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-size: 2.2rem;
+      color
